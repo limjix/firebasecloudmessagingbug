@@ -6,13 +6,7 @@ import "firebase/storage";
 import "firebase/messaging";
 
 var config = {
-  apiKey: "AIzaSyB70qR1gYbk_cpL4IZDdaVY3oQXABsk_Jw",
-  authDomain: "tunnel-insight-270606.firebaseapp.com",
-  databaseURL: "https://tunnel-insight-270606.firebaseio.com",
-  projectId: "tunnel-insight-270606",
-  storageBucket: "tunnel-insight-270606.appspot.com",
-  messagingSenderId: "617780490793",
-  appId: "1:617780490793:web:843452541815cc726f6238",
+
 };
 
 !firebase.apps.length ? firebase.initializeApp(config) : "";
@@ -25,12 +19,9 @@ export const persistencetype = firebase.auth.Auth.Persistence.LOCAL;
 // //   host: "localhost:8080",
 // //   ssl: false,
 // // });
-export const firestoreDB = firebase.firestore().collection("PIMS").doc("PIMS");
-export const firestore = firebase.firestore;
-export const storage = firebase.app().storage("gs://plantinfo");
-export const messaging = firebase.messaging();
-// // Set VAPID KEY
-// messaging.usePublicVapidKey(
-//   "BDYE2EYHdIp8qHjTKcJYPvO4PgaAH2pSruP55FOtNs5jWsgdeg7YK6OgJ0daSu21kN7aSzU19NRXRqC4bfITZYQ"
-// );
+export const firestore = firebase.firestore();
+export const storage = firebase.app().storage();
+
+export const messaging = firebase.messaging(); // THIS IS THE OFFENDING LINE Comment it out and it would work on IOS
+
 export default firebase;
