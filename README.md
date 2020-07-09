@@ -1,6 +1,7 @@
-# textnuxtios
+# Firebase Cloud Messaging Bug
 
-> My priceless Nuxt.js project
+> I demonstrate that in /firebase/init.js , firebase.messaging() does not work on IOS devices
+Project is created using NUXTJS 12.2.2
 
 ## Build Setup
 
