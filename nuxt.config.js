@@ -32,8 +32,8 @@ export default {
   plugins: [
     // "@firebase/init.js",
     // "~plugins/fireauth.js",
-    // "~plugins/slugify.js",
-    // "~plugins/VueChatScroll",
+     "~plugins/slugify.js",
+     "~plugins/VueChatScroll",
   ],
   /*
    ** Nuxt.js dev-modules
