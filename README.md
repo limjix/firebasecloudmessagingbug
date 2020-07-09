@@ -2,6 +2,7 @@
 
 > I demonstrate that in /firebase/init.js , firebase.messaging() does not work on IOS devices
 Project is created using NUXTJS 12.2.2
+Works perfectly fine on Android phones and Windows laptops
 
 ## Build Setup
 
