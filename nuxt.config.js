@@ -30,7 +30,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    // "@firebase/init.js",
+     "@firebase/init.js",
     // "~plugins/fireauth.js",
      "~plugins/slugify.js",
      "~plugins/VueChatScroll",

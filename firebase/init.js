@@ -19,18 +19,18 @@ var config = {
 export const GoogleProvider = new firebase.auth.GoogleAuthProvider();
 export const auth = firebase.auth();
 export const persistencetype = firebase.auth.Auth.Persistence.LOCAL;
-
-//Comment this out if not using local emulator
-// firebase.firestore().settings({
-//   host: "localhost:8080",
-//   ssl: false,
-// });
+//
+// //Comment this out if not using local emulator
+// // firebase.firestore().settings({
+// //   host: "localhost:8080",
+// //   ssl: false,
+// // });
 export const firestoreDB = firebase.firestore().collection("PIMS").doc("PIMS");
 export const firestore = firebase.firestore;
 export const storage = firebase.app().storage("gs://plantinfo");
 export const messaging = firebase.messaging();
-// Set VAPID KEY
-messaging.usePublicVapidKey(
-  "BDYE2EYHdIp8qHjTKcJYPvO4PgaAH2pSruP55FOtNs5jWsgdeg7YK6OgJ0daSu21kN7aSzU19NRXRqC4bfITZYQ"
-);
+// // Set VAPID KEY
+// messaging.usePublicVapidKey(
+//   "BDYE2EYHdIp8qHjTKcJYPvO4PgaAH2pSruP55FOtNs5jWsgdeg7YK6OgJ0daSu21kN7aSzU19NRXRqC4bfITZYQ"
+// );
 export default firebase;
