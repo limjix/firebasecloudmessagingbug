@@ -20,7 +20,7 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "firebase": "^7.14.3",
-    "firebase-admin": "^8.12.1",
+    "firebase-admin": "^11.4.1",
     "moment": "^2.25.3",
     "nuxt": "2.12.2",
     "slugify": "^1.4.0",
